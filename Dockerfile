@@ -17,9 +17,9 @@ RUN gem install rspec
 RUN exit
 ADD /logstash-input-azuretablemulti /home/developer/logstash-input-azuretablemulti
 RUN cd /home/developer/logstash-input-azuretablemulti
-RUN gem build logstash-input-azuretablemulti.gemspec
+RUN logstash-plugin install logstash-input-azuretablemulti-1.0.0.gem
 ADD /logstash-output-cefgen /home/developer/logstash-output-cefgen
 RUN /home/developer/logstash-output-cefgen
-RUN gem build logstash-output-cefgen.gemspec
+RUN logstash-plugin install logstash-output-cefgen-0.1.0.gem
 ADD /logstash-output-cefwinhelper /home/developer/logstash-output-cefwinhelper
-RUN gem build logstash-output-cefwinhelper.gemspec
+RUN logstash-plugin install logstash-output-cefwinhelper-0.1.0.gem
