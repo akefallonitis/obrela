@@ -10,3 +10,4 @@ ADD /logstash-output-cefgen /plugins/logstash-output-cefgen
 RUN logstash-plugin install /plugins/logstash-output-cefgen/logstash-output-cefgen-0.1.0.gem
 ADD /logstash-output-cefwinhelper /plugins/logstash-output-cefwinhelper
 RUN logstash-plugin install /plugins/logstash-output-cefwinhelper/logstash-output-cefwinhelper-0.1.0.gem
+RUN logstash-plugin remove x-pack
