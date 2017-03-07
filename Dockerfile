@@ -6,7 +6,7 @@ ADD /logstash-input-azuretablemulti /plugins/logstash-input-azuretablemulti
 RUN cd /plugins/logstash-input-azuretablemulti
 RUN logstash-plugin install logstash-input-azuretablemulti-1.0.0.gem
 ADD /logstash-input-azureblobmulti /plugins/logstash-input-azureblobmulti
-RUN cd /plugins/logstash-input-azuretablemulti
+RUN cd /plugins/logstash-input-azureblobmulti
 RUN logstash-plugin install logstash-input-azureblobmulti-0.9.5.gem
 ADD /logstash-output-cefgen /plugins/logstash-output-cefgen
 RUN cd /plugins/logstash-output-cefgen
