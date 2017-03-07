@@ -3,7 +3,7 @@ RUN apt-get update
 RUN logstash-plugin install logstash-output-syslog
 RUN logstash-plugin install logstash-output-tcp
 RUN logstash-plugin install logstash-output-udp
-RUN apt-get update && apt-get install -y \
+RUN apt-get install -y \
     git\
     gem\
     curl
