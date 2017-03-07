@@ -2,7 +2,10 @@ FROM docker.elastic.co/logstash/logstash:5.2.2
 RUN logstash-plugin install logstash-output-syslog
 RUN logstash-plugin install logstash-output-tcp
 RUN logstash-plugin install logstash-output-udp
-RUN apt-get install git gem curl
+RUN apt-get install -y \
+git\
+gem\
+curl
 RUN curl -k -L get.rvm.io | bash -s stable
 RUN source /etc/profile.d/rvm.sh
 RUN rvm install jruby
