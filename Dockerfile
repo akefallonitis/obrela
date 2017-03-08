@@ -11,3 +11,4 @@ RUN logstash-plugin install /plugins/logstash-output-cefgen/logstash-output-cefg
 ADD /logstash-output-cefwinhelper /plugins/logstash-output-cefwinhelper
 RUN logstash-plugin install /plugins/logstash-output-cefwinhelper/logstash-output-cefwinhelper-0.1.0.gem
 RUN logstash-plugin remove x-pack
+RUN logstash-plugin install logstash-filter-translate
